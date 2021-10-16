@@ -18,6 +18,7 @@ export class GithubServiceService {
   githubUsers(userName: string) {
     interface accountInterface {
       avatar:any,
+      name:string,
       followers:any,
       following:any,
       publicRepos:any,

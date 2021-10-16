@@ -2,6 +2,7 @@ export class GithubUsers {
 
     constructor(
         public avatar:any,
+        public name: string,
         public followers:any,
         public following:any,
         public publicRepos:any,
