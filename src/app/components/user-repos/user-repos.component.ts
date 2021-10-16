@@ -16,7 +16,18 @@ export class UserReposComponent implements OnInit {
   constructor(public userService: GithubServiceService) { }
 
   ngOnInit(): void {
-    this.githubUsers('Kipkoir-Gideon');
+    this.githubUser('Kipkoir-Gideon');
+  }
+  githubUser(user: string) {
+    this.userService.githubUsers(user).then((success) => {
+      this.users = this.userService.users;
+    },
+    (error) => {
+      console.log(error);
+    });
+    this.userService.findRepositories(user).then((success) => {
+      this.repositories = this.userService.repositories;
+    });
   }
 
 }
