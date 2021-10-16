@@ -1,1 +1,9 @@
-<p>account-search works!</p>
+<div class="container w-50 mt-4">
+    <form>
+      <div class="input-group">
+        <input type="search" [(ngModel)]="username" name="username" class="form-control rounded " placeholder="Input GitHub Username Here..."
+          aria-label="Search" aria-describedby="search-addon" />
+        <button type="button" class="btn btn-success" (click)="searchAccount()">Search</button>
+      </div>
+    </form>
+  </div>
