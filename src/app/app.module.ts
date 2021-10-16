@@ -8,6 +8,7 @@ import { AboutComponent } from './components/about/about.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { AccountSearchComponent } from './components/account-search/account-search.component';
 import { UserReposComponent } from './components/user-repos/user-repos.component';
+import { TimeCountPipe } from './pipes/time-count.pipe';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { UserReposComponent } from './components/user-repos/user-repos.component
     AboutComponent,
     NavbarComponent,
     AccountSearchComponent,
-    UserReposComponent
+    UserReposComponent,
+    TimeCountPipe
   ],
   imports: [
     BrowserModule,
