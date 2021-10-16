@@ -6,5 +6,9 @@ import { HttpClient } from '@angular/common/http';
 })
 export class GithubServiceService {
 
-  constructor() { }
+  constructor(private http: HttpClient) { }
+
+  githubUsers(userName: string) {
+
+  }
 }
