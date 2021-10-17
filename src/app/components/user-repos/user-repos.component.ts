@@ -16,7 +16,7 @@ export class UserReposComponent implements OnInit {
   constructor(public userService: GithubServiceService) { }
 
   ngOnInit(): void {
-    this.githubUser('Kipkoir-Gideon');
+    this.githubUser('Kipkorir-Gideon');
   }
   githubUser(user: string) {
     this.userService.githubUsers(user).then((success) => {

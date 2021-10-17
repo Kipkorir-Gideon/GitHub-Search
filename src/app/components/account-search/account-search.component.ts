@@ -12,7 +12,7 @@ export class AccountSearchComponent implements OnInit {
 
   constructor() { }
 
-  searchAccount() {
+  githubUser() {
     this.accountSearch.emit(this.username);
   }
 

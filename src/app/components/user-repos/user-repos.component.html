@@ -1,21 +1,21 @@
-<app-account-search (searchResult)="searchAccount($event)"></app-account-search>
+<app-account-search (accountSearch)="githubUser($event)"></app-account-search>
 <div class="container">
     <div class="row">
       <div class="col-md-6">
         <img id="avatar" src="{{users.avatar_url}}" alt="profile pic" height="250px" width="250px">
         <p>Name: {{users.name}}</p>
         <p>Followers: {{users.followers}}</p>
-        <p>Following: {{users.followers}}</p>
-        <p>Public Repositories: {{users.publicRepos}}</p>
+        <p>Following: {{users.following}}</p>
+        <p>Public Repositories: {{users.public_repos}}</p>
         <p>Location: {{users.location}}</p>
       </div>
       <div class="col-md-6">
         <div class="card" style="width: 40rem">
-          <div *ngIf='Repos'>
-            <div *ngFor='let repo of Repos'>
+          <div *ngIf='repositories'>
+            <div *ngFor='let repositories of repositories'>
               <h3>{{repositories.name}}</h3>
               <p> {{repositories.description}} </p>
-              <p> Created {{repositories.timeCreated | get}} on {{repositories.timeCreated | timeCount}}</p>
+              <p> Created {{repositories.created_at | timeCount}} on {{repositories.created_at | date}}</p>
             </div>
           </div>
         </div>
