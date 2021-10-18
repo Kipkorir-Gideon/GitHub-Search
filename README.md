@@ -61,7 +61,7 @@ ngetichgideon21@gmail.com
 
 ## Live site
 
-View live site [here](https://kipkorir-gideon.github.io/GitHub-Search/).
+View live site [here](https://kipkorir-gideon.github.io/GitHub-Search/profile/).
 
 ## License & copyright
 
