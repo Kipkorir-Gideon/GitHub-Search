@@ -1,8 +1,9 @@
 <div class="container w-50 mt-4">
     <form>
+      <p class="text-center"><em>Search Github Accounts</em></p>
       <div class="input-group">
-        <input type="search" [(ngModel)]="username" name="username" class="form-control rounded" aria-label="Search" aria-describedby="search-addon"/>
-        <button type="button" class="btn btn-success" (click)="githubUser()">Search</button>
+        <input type="search" [(ngModel)]="username" name="username" class="form-control rounded mb-3" aria-label="Search" aria-describedby="search-addon"/>
+        <button type="button" class="btn btn-success mb-3" (click)="githubUser()">Search</button>
       </div>
     </form>
   </div>

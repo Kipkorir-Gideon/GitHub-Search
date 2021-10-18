@@ -2,6 +2,47 @@
     border-radius: 50%;
 }
 
+#users {
+    border-width: 0.1px;
+    border-radius: 10px;
+    height: 420px;
+    align-items: center;
+    padding: 15px;
+    background-color: honeydew;
+}
+
+.profile {
+    color: rgb(66, 112, 66);
+    align-items: center;
+}
+
+.repo {
+    /* display: grid;
+    padding: 0 50px 0 50px;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 10px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.repos {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    max-width: 80%;
+    height: 350px;
+    background-color: rgb(247, 243, 243);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(100, 99, 99, 0.5);
+    align-items: center;
+    text-align: justify;
+    padding: 20px 10px 20px 10px;
+    border-width: 1px;
+    border-radius: 10px;
+    margin: auto;
+    overflow: hidden;
+}
+
 .footer {
     text-align: center;
     height: 100px;

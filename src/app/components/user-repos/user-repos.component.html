@@ -1,28 +1,34 @@
 <app-navbar></app-navbar>
 <app-account-search (accountSearch)="githubUser($event)"></app-account-search>
 <div class="container">
-    <div class="row">
-      <div class="col-md-3">
+  <div class="row">
+    <div class="col-md-3">
+      <h2 class="profile text-center mt-2">Profile</h2>
+      <div id="users">
         <img id="avatar" src="{{users.avatar_url}}" alt="profile pic" height="200px" width="200px">
-        <p>User Name: {{users.login}}</p>
-        <p>Followers: {{users.followers}}</p>
-        <p>Following: {{users.following}}</p>
-        <p>Public Repositories: {{users.public_repos}}</p>
-        <p>Location: {{users.location}}</p>
+        <p><strong>User Name</strong>: {{users.login}}</p>
+        <p><strong>Followers</strong>: {{users.followers}}</p>
+        <p><strong>Following</strong>: {{users.following}}</p>
+        <p><strong>Public Repositories</strong>: {{users.public_repos}}</p>
+        <p><strong>Location</strong>: {{users.location}}</p>
       </div>
-      <div class="col-md-9">
-        <div class="" style="width: 35%">
-          <div *ngIf='repositories'>
-            <div class="card m-2" *ngFor='let repositories of repositories'>
-              <h3>{{repositories.name}}</h3>
+    </div>
+    <div class="col-md-9">
+      <h2 class="profile text-center">Public Repositories</h2>
+      <div class="row">
+        <div class="row" *ngIf='repositories'>
+          <div class="col-md-6" *ngFor='let repositories of repositories'>
+            <div class="repos mb-5">
+              <h4>{{repositories.name}}</h4>
               <p> {{repositories.description}} </p>
-              <p> Created {{repositories.created_at | timeCount}} on {{repositories.created_at | date}}</p>
+              <p><em>Created {{repositories.created_at | timeCount}} on {{repositories.created_at | date}}</em></p>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="footer">
-    <p>©2021 Github Search</p>
+</div>
+<div class="footer">
+  <p>©2021 Github Search</p>
 </div>
