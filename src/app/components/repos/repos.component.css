@@ -1,15 +1,3 @@
-#avatar {
-    border-radius: 50%;
-}
-
-#users {
-    border-width: 0.1px;
-    border-radius: 10px;
-    height: 420px;
-    align-items: center;
-    padding: 15px;
-    background-color: honeydew;
-}
 
 .profile {
     color: rgb(66, 112, 66);

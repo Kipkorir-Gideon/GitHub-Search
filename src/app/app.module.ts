@@ -11,6 +11,8 @@ import { AccountSearchComponent } from './components/account-search/account-sear
 import { UserReposComponent } from './components/user-repos/user-repos.component';
 import { TimeCountPipe } from './pipes/time-count.pipe';
 import { HighlightDirective } from './directives/highlight.directive';
+import { ReposComponent } from './components/repos/repos.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { HighlightDirective } from './directives/highlight.directive';
     AccountSearchComponent,
     UserReposComponent,
     TimeCountPipe,
-    HighlightDirective
+    HighlightDirective,
+    ReposComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
