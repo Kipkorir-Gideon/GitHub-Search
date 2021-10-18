@@ -10,6 +10,7 @@ import { NavbarComponent } from './components/navbar/navbar.component';
 import { AccountSearchComponent } from './components/account-search/account-search.component';
 import { UserReposComponent } from './components/user-repos/user-repos.component';
 import { TimeCountPipe } from './pipes/time-count.pipe';
+import { HighlightDirective } from './directives/highlight.directive';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,8 @@ import { TimeCountPipe } from './pipes/time-count.pipe';
     NavbarComponent,
     AccountSearchComponent,
     UserReposComponent,
-    TimeCountPipe
+    TimeCountPipe,
+    HighlightDirective
   ],
   imports: [
     BrowserModule,
